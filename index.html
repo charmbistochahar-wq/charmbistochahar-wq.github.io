@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Help Mohammad | A Chance to Rebuild</title>
+
+<meta
+    name="description"
+    content="A personal request for help from Mohammad, an Iranian man facing a difficult financial period and trying to rebuild his life."
+>
+
+<meta
+    name="keywords"
+    content="help Mohammad, support Mohammad, donation, humanitarian help, Iran"
+>
+
+<meta name="author" content="Mohammad">
+
+<meta property="og:title" content="Help Mohammad — A Chance to Rebuild">
+<meta
+    property="og:description"
+    content="Sometimes one small act of kindness can help someone keep going."
+>
+<meta property="og:type" content="website">
+<meta
+    property="og:url"
+    content="https://charmbistochahar-wq.github.io/"
+>
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Help Mohammad — A Chance to Rebuild">
+<meta
+    name="twitter:description"
+    content="A personal request for help during a difficult time."
+>
+
+<!-- Hyvor Talk -->
+<script
+    async
+    src="https://talk.hyvor.com/embed/embed.js"
+    type="module">
+</script>
+
+<style>
+
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f8fc;
+    color: #172b4d;
+    line-height: 1.75;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.nav-inner {
+    max-width: 1150px;
+    margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    color: #1266d6;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logo span {
+    display: block;
+    font-size: 11px;
+    color: #60758f;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #17375e;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #1677e8;
+}
+
+.nav-donate {
+    background: #1477e8;
+    color: white !important;
+    padding: 9px 17px;
+    border-radius: 25px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 75% 30%,
+            rgba(255,205,100,0.9),
+            transparent 22%
+        ),
+        linear-gradient(
+            120deg,
+            #061b32 0%,
+            #0d385d 43%,
+            #6e91a8 70%,
+            #f5c978 100%
+        );
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(0,0,0,0.45),
+            transparent 35%
+        ),
+        linear-gradient(
+            to bottom,
+            transparent 55%,
+            rgba(0,0,0,0.55)
+        );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1150px;
+    width: 100%;
+    margin: auto;
+    padding: 80px 25px;
+    color: white;
+}
+
+.hero-text {
+    max-width: 590px;
+}
+
+.hero-small {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #9ed5ff;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 72px);
+    line-height: 1.08;
+    margin: 15px 0;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: #78c9ff;
+}
+
+.hero-subtitle {
+    font-size: 21px;
+    max-width: 530px;
+    color: #edf7ff;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.primary-btn {
+    background: #1597f5;
+    color: white;
+    box-shadow: 0 10px 25px rgba(21,151,245,0.3);
+}
+
+.secondary-btn {
+    border: 1px solid rgba(255,255,255,0.45);
+    color: white;
+    background: rgba(255,255,255,0.08);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    transform: translateY(-3px);
+}
+
+.hero-note {
+    margin-top: 28px;
+    font-size: 14px;
+    color: #dcefff;
+}
+
+.hero-person {
+    position: absolute;
+    right: 12%;
+    bottom: -5px;
+    width: 230px;
+    height: 360px;
+    background: linear-gradient(145deg, #07131e, #172f40);
+    border-radius: 110px 110px 20px 20px;
+    opacity: 0.9;
+    box-shadow: 0 0 60px rgba(0,0,0,0.25);
+}
+
+.hero-person::before {
+    content: "";
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    background: #17202a;
+    border-radius: 50%;
+    top: -65px;
+    left: 58px;
+}
+
+.hero-person::after {
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 80px;
+    background: #081522;
+    bottom: -10px;
+    left: -50px;
+    border-radius: 50%;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+.section-title {
+    font-size: 38px;
+    margin: 0 0 10px;
+    color: #123b68;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 35px;
+}
+
+.card {
+    background: white;
+    border-radius: 22px;
+    padding: 32px;
+    box-shadow: 0 12px 35px rgba(15,55,90,0.08);
+    margin-bottom: 25px;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #123b68;
+}
+
+.highlight {
+    margin: 25px 0;
+    padding: 22px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #e8f5ff, #f4f9ff);
+    border-left: 5px solid #1685e8;
+    font-weight: 600;
+    color: #21496f;
+}
+
+.big-highlight {
+    font-size: 19px;
+    color: #116dcc;
+    font-weight: bold;
+}
+
+
+/* =========================
+   HELP OPTIONS
+========================= */
+
+.help-box {
+    background: linear-gradient(145deg, #edf7ff, #f7fbff);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.help-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 0;
+    border-bottom: 1px solid #dce9f4;
+}
+
+.help-item:last-child {
+    border-bottom: none;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1477e8;
+    color: white;
+    font-size: 22px;
+}
+
+.help-item strong {
+    display: block;
+    color: #173d68;
+}
+
+.help-item small {
+    color: #69809a;
+}
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote {
+    font-size: 19px;
+    font-weight: bold;
+    color: #17446e;
+    background: #e6f3ff;
+    border-radius: 20px;
+    padding: 28px;
+    position: relative;
+}
+
+.quote::before {
+    content: "“";
+    font-size: 70px;
+    color: #4fa8f5;
+    position: absolute;
+    top: -20px;
+    left: 15px;
+}
+
+
+/* =========================
+   COMMENTS
+========================= */
+
+.comments-section {
+    background: white;
+    border-radius: 28px;
+    padding: 38px;
+    box-shadow: 0 12px 35px rgba(15,55,90,0.08);
+    margin-top: 20px;
+}
+
+.comments-section h2 {
+    color: #123b68;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.comments-intro {
+    color: #64788e;
+    margin-bottom: 30px;
+}
+
+.hyvor-wrapper {
+    margin-top: 25px;
+}
+
+
+/* =========================
+   DONATION
+========================= */
+
+.donation-section {
+    background: linear-gradient(135deg, #062848, #084d79);
+    color: white;
+    border-radius: 28px;
+    padding: 38px;
+    box-shadow: 0 18px 45px rgba(3,38,65,0.25);
+}
+
+.donation-section h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.network {
+    display: inline-block;
+    background: rgba(255,255,255,0.12);
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 10px 0 20px;
+    font-weight: bold;
+}
+
+.amounts {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.amount {
+    background: rgba(255,255,255,0.13);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 9px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.wallet-label {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.wallet {
+    background: rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 15px;
+    border-radius: 12px;
+    word-break: break-all;
+    font-family: monospace;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.copy-btn {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    background: #18c99a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    opacity: 0.9;
+}
+
+.copied {
+    display: none;
+    text-align: center;
+    color: #6ff0c8;
+    margin-top: 10px;
+}
+
+
+/* =========================
+   MUSIC PLAYER
+========================= */
+
+.music-player {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2000;
+
+    background: rgba(5,32,55,0.96);
+    color: white;
+
+    padding: 10px 12px 10px 16px;
+
+    border-radius: 40px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.25);
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.music-player span {
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.music-player button {
+    width: 44px;
+    height: 44px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #1688ed;
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+}
+
+.music-player button:hover {
+    transform: scale(1.05);
+    background: #0e73cd;
+}
+
+.music-player button:active {
+    transform: scale(0.95);
+}
+
+.music-status {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 82px;
+    z-index: 1999;
+
+    max-width: 280px;
+
+    background: #fff;
+    color: #17375e;
+
+    padding: 10px 14px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   TRUST
+========================= */
+
+.trust {
+    background: #eaf5ff;
+}
+
+.trust-grid {
+    max-width: 1150px;
+    margin: auto;
+    padding: 40px 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.trust-item {
+    text-align: center;
+}
+
+.trust-icon {
+    font-size: 30px;
+    color: #1379dc;
+}
+
+.trust-item strong {
+    display: block;
+    color: #173f68;
+}
+
+.trust-item small {
+    color: #70869c;
+}
+
+
+/* =========================
+   SHARE
+========================= */
+
+.share {
+    text-align: center;
+}
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.share-btn {
+    text-decoration: none;
+    padding: 11px 18px;
+    border-radius: 25px;
+    background: #eaf2f9;
+    color: #17446e;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.share-btn:hover {
+    background: #d8eaf9;
+}
+
+.hashtags {
+    margin-top: 20px;
+    color: #4384bd;
+    font-size: 14px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #061f36;
+    color: #bcd0e2;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.footer-tagline {
+    color: #7fc7ff;
+}
+
+.footer-note {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #8097ab;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a:not(.nav-donate) {
+        display: none;
+    }
+
+    .hero {
+        min-height: 650px;
+    }
+
+    .hero-person {
+        right: 5%;
+        opacity: 0.45;
+        transform: scale(0.75);
+        transform-origin: bottom right;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .nav-inner {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .hero-content {
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 45px 15px;
+    }
+
+    .card {
+        padding: 23px 18px;
+        border-radius: 18px;
+    }
+
+    .section-title {
+        font-size: 31px;
+    }
+
+    .donation-section {
+        padding: 25px 18px;
+        border-radius: 20px;
+    }
+
+    .comments-section {
+        padding: 25px 18px;
+        border-radius: 20px;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr 1fr;
+        padding: 30px 15px;
+    }
+
+    .music-player {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .music-status {
+        right: 10px;
+        bottom: 70px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav class="navbar">
+
+<div class="nav-inner">
+
+<a href="#home" class="logo">
+    ♡ Mohammad
+    <span>HOPE • HELP • A BETTER TOMORROW</span>
+</a>
+
+<div class="nav-links">
+
+    <a href="#home">Home</a>
+
+    <a href="#story">My Story</a>
+
+    <a href="#help">How You Can Help</a>
+
+    <a href="#comments">Comments</a>
+
+    <a href="#donate" class="nav-donate">
+        ♥ Make a Difference
+    </a>
+
+</div>
+
+</div>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="hero-text">
+
+<div class="hero-small">
+    A personal request for help
+</div>
+
+<h1>
+    Please Help Me
+    <span>Get Through This Difficult Time</span>
+</h1>
+
+<p class="hero-subtitle">
+    Sometimes one small act of kindness can give someone
+    the chance to keep going and rebuild their life.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#donate" class="primary-btn">
+    ♥ Support Me →
+</a>
+
+<a href="#story" class="secondary-btn">
+    Read My Story
+</a>
+
+</div>
+
+<div class="hero-note">
+    ♡ Every little bit of kindness makes a big difference.
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-person"></div>
+
+</section>
+
+
+<!-- =========================
+     STORY + HELP
+========================= -->
+
+<section id="story">
+
+<div class="container">
+
+<div class="grid">
+
+
+<!-- STORY -->
+
+<div class="card">
+
+<h2 class="section-title">
+    My Story
+</h2>
+
+<p>
+    Hello, my name is <strong>Mohammad</strong>.
+    I am an Iranian man going through one of the most
+    difficult periods of my life.
+</p>
+
+<p>
+    The economic situation in Iran has become extremely challenging,
+    especially for people with limited financial resources.
+    Severe inflation and the rising cost of basic necessities
+    have made it increasingly difficult to afford even the most
+    essential things in everyday life.
+</p>
+
+<p>
+    I have experienced a serious financial crisis.
+    I lost my source of income, I am currently unemployed,
+    and I am struggling with significant debts.
+    At the moment, I have no stable income and I am having
+    a very hard time covering my basic living expenses.
+</p>
+
+<p>
+    I am not receiving financial support from any organization
+    or institution, and I do not have health insurance to help
+    me when I need medical care.
+</p>
+
+<div class="highlight">
+
+    I am not seeking political support, and I do not represent
+    any political group or ideology.
+
+    I simply believe in peace and in the right of every person
+    to live with dignity and hope.
+
+</div>
+
+<p>
+    I never imagined that I would have to ask strangers
+    for financial help. But sometimes life puts us in situations
+    where we cannot get through them alone.
+</p>
+
+<p>
+    I am asking for your help so that I can afford basic necessities
+    such as food, healthcare, and other essential living expenses
+    while I try to rebuild my life, find work, and become
+    financially independent again.
+</p>
+
+<p class="big-highlight">
+    Even a small donation can make a meaningful difference to me.
+</p>
+
+<p>
+    If you are able to help, please know that your kindness
+    would mean much more to me than the amount itself.
+    You would be helping another human being get through
+    a very difficult chapter of his life.
+</p>
+
+<p>
+    Thank you sincerely for taking the time to read my story.
+</p>
+
+<p class="big-highlight">
+    I am not asking for much.
+    I simply want a chance to keep going and rebuild my life.
+</p>
+
+<p>
+    With gratitude,<br>
+    <strong>Mohammad</strong>
+</p>
+
+<p style="font-size:13px;color:#758aa0;">
+    🔒 I am using only my first name to protect my privacy
+    and personal safety.
+</p>
+
+</div>
+
+
+<!-- HELP -->
+
+<div>
+
+<div class="card" id="help">
+
+<h2>
+    💙 How You Can Help
+</h2>
+
+<p>
+    Your support can help me get through this difficult period
+    and work toward becoming financially independent again.
+</p>
+
+<div class="help-box">
+
+<div class="help-item">
+
+<div class="icon">🍞</div>
+
+<div>
+    <strong>Food & Basic Necessities</strong>
+    <small>Help with everyday living needs.</small>
+</div>
+
+</div>
+
+
+<div class="help-item">
+
+<div class="icon">❤</div>
+
+<div>
+    <strong>Healthcare</strong>
+    <small>Help with medical care and treatment.</small>
+</div>
+
+</div>
+
+
+<div class="help-item">
+
+<div class="icon">💼</div>
+
+<div>
+    <strong>Job Opportunities</strong>
+    <small>Help me rebuild my future.</small>
+</div>
+
+</div>
+
+
+<div class="help-item">
+
+<div class="icon">🏠</div>
+
+<div>
+    <strong>Essential Expenses</strong>
+    <small>Help cover urgent living costs.</small>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="quote">
+
+Your kindness may be a small action for you,
+but it can mean a new beginning for someone else.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     COMMENTS
+========================= -->
+
+<section id="comments">
+
+<div class="container">
+
+<div class="comments-section">
+
+<h2>
+    💬 Leave a Message
+</h2>
+
+<p class="comments-intro">
+    If you would like to leave a kind message, share your thoughts,
+    or simply say hello, you are very welcome.
+    I truly appreciate hearing from people around the world.
+</p>
+
+<div class="hyvor-wrapper">
+
+<hyvor-talk-comments
+    website-id="15984"
+    page-id="home">
+</hyvor-talk-comments>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     DONATION
+========================= -->
+
+<section id="donate">
+
+<div class="container">
+
+<div class="donation-section">
+
+<h2>
+    💚 Support Me With USDT
+</h2>
+
+<p>
+    If you would like to support me, you can send USDT
+    directly to my wallet.
+</p>
+
+<div class="network">
+    USDT — BNB Smart Chain (BEP20)
+</div>
+
+<div class="amounts">
+
+<span class="amount">$10</span>
+<span class="amount">$25</span>
+<span class="amount">$50</span>
+<span class="amount">$100</span>
+
+</div>
+
+<div class="wallet-label">
+    Wallet Address
+</div>
+
+<div class="wallet" id="wallet">
+    0x3ac1Fa7C8912EFa191f9E3F18F0E2283d22F4070
+</div>
+
+<button
+    class="copy-btn"
+    id="copyWalletButton"
+    type="button">
+    📋 Copy Wallet Address
+</button>
+
+<div class="copied" id="copied">
+    ✓ Wallet address copied!
+</div>
+
+<p style="font-size:13px;color:#b7cde0;margin-top:20px;">
+
+    ⚠️ Please make sure you are sending
+    <strong>USDT on BNB Smart Chain (BEP20)</strong>.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     TRUST
+========================= -->
+
+<section class="trust">
+
+<div class="trust-grid">
+
+<div class="trust-item">
+
+<div class="trust-icon">🛡</div>
+
+<strong>Personal Request</strong>
+
+<small>
+    This is a personal request for help.
+</small>
+
+</div>
+
+
+<div class="trust-item">
+
+<div class="trust-icon">🔒</div>
+
+<strong>Privacy</strong>
+
+<small>
+    Only my first name is publicly used.
+</small>
+
+</div>
+
+
+<div class="trust-item">
+
+<div class

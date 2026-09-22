@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://charmbistochahar-wq.github.io/sitemap.xml
